@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-wrapper {
+    border-radius: 12px;
+    width: 600px;
+    background-color: lightblue;
+    border: 2px dashed coral;
+    min-height: 300px;
+    padding: 35px;
+    margin: 50px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    margin-bottom: 35px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-label {
+    margin: 5px 0;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px dashed coral;
+    transition: 0.3s ease;
+}
+.form-input:focus {
+    border: 2px solid coral;
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+    margin: 20px 0;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: coral;
+    color: white;
+    border: 1px solid coral;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: white;
+    color: coral;
+}
+
+.avatar__image {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.label__title {
+    text-transform: uppercase;
+    color: coral;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.label-box {
+    padding: 15px;
+    border: 2px solid coral;
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.label__text {
+    color: coral;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.label__title.repos {
+    margin: 15px 15px 5px 0px;
+    color: white;
+}
+.repositories {
+    padding: 15px;
+    border: 2px solid coral;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    background-color: white;
+    color: coral;
+    font-weight: 700;
+    font-size: 16px;
 }
